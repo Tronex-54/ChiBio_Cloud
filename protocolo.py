@@ -1,6 +1,5 @@
-print("¡CONEXION EXITOSAaaaaaaaa!")
-print("Enviado desde el transmisor de Tronex-54")
-# Prueba de suma
-a = 5
-b = 19
-print("Resultado en el reactor:", a + b)
+# Escribe tu codigo aqui
+print("--- INICIO DE SECUENCIA ---")
+temperatura = 37.5
+print(f"Ajustando a {temperatura} grados")
+print("--- FIN DE SECUENCIA ---")
