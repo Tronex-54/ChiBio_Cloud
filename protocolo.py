@@ -1,1 +1,1 @@
-print("Esperando instrucciones...")
+print("Prueba de comunicacion limpia")
