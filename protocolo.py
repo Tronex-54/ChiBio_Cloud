@@ -9,6 +9,10 @@
         elif current_status == 1.0:
             sysData[M]['Thermostat']['target'] = 37
             SetOutputOn(M, 'Thermostat', 1)
+            sysData[M]['Pump1']['target'] = 0.5
+            SetOutputOn(M, 'Pump1', 1)
+            time.sleep(5)
+            SetOutputOn(M, 'Pump1', 0)
             sysData[M]['Custom']['Status'] = 2.0
         elif current_status == 2.0:
             addTerminal(M, 'Protocolo Finalizado')
