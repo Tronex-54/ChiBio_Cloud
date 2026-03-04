@@ -2,7 +2,7 @@
         current_status = sysData[M]['Custom']['Status']
 
         if current_status == 0.0:
-            sysData[M]['Thermostat']['target'] = 27
+            sysData[M]['Thermostat']['target'] = 22
             SetOutputOn(M, 'Thermostat', 1)
             sysData[M]['Custom']['Status'] = 1.0
 
