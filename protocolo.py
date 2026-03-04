@@ -7,14 +7,14 @@
             sysData[M]['Custom']['Status'] = 1.0
 
         elif current_status == 1.0:
-            sysData[M]['LEDB']['target'] = 0.1
-            SetOutputOn(M, 'LEDB', 1)
+            sysData[M]['LEDG']['target'] = 0.1
+            SetOutputOn(M, 'LEDG', 1)
             time.sleep(5)
-            SetOutputOn(M, 'LEDB', 0)
-            sysData[M]['Pump1']['target'] = 0.5
-            SetOutputOn(M, 'Pump1', 1)
-            time.sleep(5)
-            SetOutputOn(M, 'Pump1', 0)
+            SetOutputOn(M, 'LEDG', 0)
+            sysData[M]['Pump3']['target'] = 0.5
+            SetOutputOn(M, 'Pump3', 1)
+            time.sleep(3)
+            SetOutputOn(M, 'Pump3', 0)
             sysData[M]['Custom']['Status'] = 2.0
         elif current_status == 2.0:
             addTerminal(M, 'Protocolo Finalizado')
