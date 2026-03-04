@@ -2,13 +2,10 @@
         current_status = sysData[M]['Custom']['Status']
 
         if current_status == 0.0:
-            sysData[M]['Thermostat']['target'] = 22
+            sysData[M]['Thermostat']['target'] = 27
             SetOutputOn(M, 'Thermostat', 1)
             sysData[M]['Custom']['Status'] = 1.0
 
-        elif current_status == 1.0:
-            addTerminal(M, 'Mensaje de control')
-            sysData[M]['Custom']['Status'] = 2.0
         elif current_status == 2.0:
             addTerminal(M, 'Protocolo Finalizado')
             sysData[M]['Custom']['Status'] = 99.0
