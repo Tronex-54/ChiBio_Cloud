@@ -13,7 +13,7 @@
             SetOutputOn(M, 'Thermostat', 1)
             sysData[M]['Stir']['target'] = 0.5
             SetOutputOn(M, 'Stir', 1)
-            sysData[M]['OD']['target'] = 0.1
+            sysData[M]['OD']['target'] = 0.2
             SetOutputOn(M, 'OD', 1)
             sysData[M]['Custom']['Status'] = 1.0
 
